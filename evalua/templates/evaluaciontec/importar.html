@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <div style="text-align: center;">
+        <h2><a style="color: rgb(5, 30, 255);" href="/index" href="/index ">Inicio</a></h2>
+        <br /> </p>
+        <p>{% block content %}</p>
+        <h3>Import Data</h3>
+        <p>importing to database</p>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}<br />
+            <input type="file" name="importData"></p>
+            <p>Please select format of file.</p>
+            <p> <select name="file-format" class="form-control my-3"><option selected>Choose format...</option><option>CSV</option><option>JSON</option></select><br />
+                <button class="btn btn-primary" type="submit">Import</button><br />
+        </form>
+        <p><br /> {% endblock %}<br />
+    </div>
+
+    <div style="background-color:rgb(13, 13, 68);bottom: 0;width: 100%;height:150px;position: absolute;text-align: center;">
+        <p style="color: rgb(253, 253, 253);">Avenida Tecnológico #100, Ciudad Guzmán</p>
+        <p style="color:rgb(253, 253, 253);;">Municipio de Zapotlan el Grande, Jalisco</p>
+        <p style="color: rgb(253, 253, 253);;">Teléfono:(01) 341 575 2050</p>
+        <p style="color: rgb(253, 253, 253);;">Fax: 01(341) 575 2074</p>
+        <p style="color: rgb(253, 253, 253);;"></p>
+    </div>
+</body>
+
+</html>
